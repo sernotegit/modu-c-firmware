@@ -1,0 +1,5 @@
+include:
+  - board: ms88sf3/nrf52840
+    shield: modu_left
+  - board: ms88sf3/nrf52840
+    shield: modu_right
