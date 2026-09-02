@@ -27,6 +27,15 @@
             #binding-cells = <0>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
+
+        esc_tilde: esc_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESC_TILDE";
+            bindings = <&kp ESCAPE>, <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -83,7 +92,7 @@
             //                |MO1 |LANG|SPC |   |BSPC|RET |MO1 | B  |
 
             bindings = <
-&gresc               &kp N1                &kp N2       &kp N3  &kp N4  &kp N5  &kp N6       &kp N7   &kp N8     &kp N9    &kp N0     &kp BACKSPACE
+&esc_tilde           &kp N1                &kp N2       &kp N3  &kp N4  &kp N5  &kp N6       &kp N7   &kp N8     &kp N9    &kp N0     &kp BACKSPACE
 &kp TAB              &kp Q                 &kp W        &kp E   &kp R   &kp T   &kp Y        &kp U    &kp I      &kp O     &kp P      &td_bracket
 &lt 1 SPACE          &kp A                 &kp S        &kp D   &kp F   &kp G   &kp H        &kp J    &kp K      &kp L     &kp SEMI   &lt 1 SQT
 &ht_sft LSHFT SPACE  &kp Z                 &kp X        &kp C   &kp V   &kp B   &kp N        &kp M    &kp COMMA  &kp DOT   &kp FSLH   &ht_sft RSHIFT ENTER
