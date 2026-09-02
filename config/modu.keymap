@@ -39,6 +39,16 @@
             bindings = <&kp K_PASTE>;
             key-positions = <39 40>;
         };
+
+        leftbootloader {
+            bindings = <&bootloader>;
+            key-positions = <60 61 62>;
+        };
+
+        rightbootloader {
+            bindings = <&bootloader>;
+            key-positions = <63 64 65>;
+        };
     };
 
     keymap {
