@@ -37,14 +37,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        ht_gui: ht_gui {
+        ht_sk: ht_sk {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_GUI";
-            #binding-cells = <0>;
+            label = "HT_SK";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            bindings = <&sk LGUI>, <&kp LGUI>;
+            bindings = <&sk>, <&kp>;
         };
     };
 
@@ -112,7 +112,7 @@
 &kp TAB              &kp Q                 &kp W        &kp E   &kp R   &kp T   &kp Y        &kp U    &kp I      &kp O     &kp P      &td_bracket
 &lt 1 SPACE          &kp A                 &kp S        &kp D   &kp F   &kp G   &kp H        &kp J    &kp K      &kp L     &kp SEMI   &lt 1 SQT
 &ht_sft LSHFT SPACE  &kp Z                 &kp X        &kp C   &kp V   &kp B   &kp N        &kp M    &kp COMMA  &kp DOT   &kp FSLH   &ht_sft RSHIFT ENTER
-&kp LCTRL            &kp LALT              &ht_gui      &none   &none   &none   &none        &none    &none      &kp RALT  &kp RCTRL  &kp DEL
+&kp LCTRL            &kp LALT              &ht_sk LGUI LGUI  &none   &none   &none   &none        &none    &none      &kp RALT  &kp RCTRL  &kp DEL
 &kp LANG1            &ht_sft LSHIFT SPACE  &lt 1 SPACE                          &lt 2 ENTER  &kp DEL  &mo 2      &kp B
             >;
         };
