@@ -84,13 +84,13 @@
 
         leftbootloader {
             bindings = <&bootloader>;
-            key-positions = <60 61 62>;
+            key-positions = <0 41>;
             layers = <0>;
         };
 
         rightbootloader {
             bindings = <&bootloader>;
-            key-positions = <63 64 65>;
+            key-positions = <42 11>;
             layers = <0>;
         };
     };
@@ -108,12 +108,12 @@
             //                |MO1 |LANG|SPC |   |BSPC|RET |MO1 | B  |
 
             bindings = <
-&esc_tilde           &kp N1                &kp N2       &kp N3  &kp N4  &kp N5  &kp N6       &kp N7   &kp N8     &kp N9    &kp N0     &kp BACKSPACE
-&kp TAB              &kp Q                 &kp W        &kp E   &kp R   &kp T   &kp Y        &kp U    &kp I      &kp O     &kp P      &td_bracket
-&lt 1 SPACE          &kp A                 &kp S        &kp D   &kp F   &kp G   &kp H        &kp J    &kp K      &kp L     &kp SEMI   &lt 1 SQT
-&ht_sft LSHFT SPACE  &kp Z                 &kp X        &kp C   &kp V   &kp B   &kp N        &kp M    &kp COMMA  &kp DOT   &kp FSLH   &ht_sft RSHIFT ENTER
+&esc_tilde           &kp N1                &kp N2            &kp N3  &kp N4  &kp N5  &kp N6       &kp N7   &kp N8     &kp N9    &kp N0     &kp BACKSPACE
+&kp TAB              &kp Q                 &kp W             &kp E   &kp R   &kp T   &kp Y        &kp U    &kp I      &kp O     &kp P      &td_bracket
+&lt 1 SPACE          &kp A                 &kp S             &kp D   &kp F   &kp G   &kp H        &kp J    &kp K      &kp L     &kp SEMI   &lt 1 SQT
+&ht_sft LSHFT SPACE  &kp Z                 &kp X             &kp C   &kp V   &kp B   &kp N        &kp M    &kp COMMA  &kp DOT   &kp FSLH   &ht_sft RSHIFT ENTER
 &kp LCTRL            &kp LALT              &ht_sk LGUI LGUI  &none   &none   &none   &none        &none    &none      &kp RALT  &kp RCTRL  &kp DEL
-&kp LANG1            &ht_sft LSHIFT SPACE  &lt 1 SPACE                          &lt 2 ENTER  &kp DEL  &mo 2      &kp B
+&kp LANG1            &ht_sft LSHIFT SPACE  &lt 1 SPACE                               &lt 2 ENTER  &kp DEL  &mo 2      &kp B
             >;
         };
 
