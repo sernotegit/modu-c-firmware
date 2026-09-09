@@ -40,6 +40,14 @@
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
 
+        td_minus_equal: td_minus_equal {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_MINUS_EQUAL";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp MINUS>, <&kp EQUAL>;
+        };
+
         esc_tilde: esc_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "ESC_TILDE";
@@ -120,7 +128,7 @@
             //                |MO1 |LANG|SPC |   |BSPC|RET |MO1 | B  |
 
             bindings = <
-&esc_tilde           &as EXCL N1           &as AT N2         &as HASH N3  &as DLLR N4  &as PRCNT N5  &as CARET N6  &as AMPS N7  &as STAR N8  &as LPAR N9  &as RPAR N0  &kp MINUS
+&esc_tilde           &as EXCL N1           &as AT N2         &as HASH N3  &as DLLR N4  &as PRCNT N5  &as CARET N6  &as AMPS N7  &as STAR N8  &as LPAR N9  &as RPAR N0  &td_minus_equal
 &kp TAB              &kp Q                 &kp W             &kp E        &kp R        &kp T         &kp Y         &kp U        &kp I        &kp O        &kp P        &kp BACKSPACE
 &ht_sft LSHFT SPACE  &kp A                 &kp S             &kp D        &kp F        &kp G         &kp H         &kp J        &kp K        &kp L        &kp SEMI     &ht_sft RSHIFT SQT
 &lt 1 SPACE          &kp Z                 &kp X             &kp C        &kp V        &kp B         &kp N         &kp M        &kp COMMA    &kp DOT      &kp FSLH     &lt 1 ENTER
