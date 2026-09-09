@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKET";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
 
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MINUS_EQUAL";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp MINUS>, <&kp EQUAL>;
         };
 
