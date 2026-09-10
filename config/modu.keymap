@@ -26,7 +26,7 @@
             label = "AUTO_SHIFT";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
@@ -148,8 +148,8 @@
 
         lower_layer {
             bindings = <
-&kp F1       &kp F2    &kp F3    &kp F4     &kp F5     &kp INS    &kp F7          &kp F8     &kp F9     &kp F10    &kp F11          &kp F12
-&trans       &trans    &kp HOME  &kp UP     &kp END    &kp PG_UP  &kp KP_NUMLOCK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS      &kp DEL
+&kp F1       &kp F2    &kp F3    &kp F4     &kp F5     &kp F6     &kp F7          &kp F8     &kp F9     &kp F10    &kp F11          &kp F12
+&trans       &kp INS   &kp HOME  &kp UP     &kp END    &kp PG_UP  &kp KP_NUMLOCK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS      &kp DEL
 &trans       &trans    &kp LEFT  &kp DOWN   &kp RIGHT  &kp PG_DN  &mkp RCLK       &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS     &kp EQUAL
 &trans       &trans    &trans    &trans     &trans     &trans     &mkp LCLK       &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp KP_DOT
 &trans       &trans    &trans    &trans     &trans     &trans     &trans          &trans     &trans     &kp KP_N0  &kp KP_DIVIDE    &kp KP_ENTER
