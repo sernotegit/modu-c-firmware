@@ -141,7 +141,7 @@
 &kp TAB              &kp Q                 &kp W             &kp E        &kp R        &kp T         &kp Y         &kp U        &kp I        &kp O        &kp P        &bspc_del
 &ht_sft LSHFT SPACE  &kp A                 &kp S             &kp D        &kp F        &kp G         &kp H         &kp J        &kp K        &kp L        &kp SEMI     &ht_sft RSHIFT ENTER
 &lt 1 SPACE          &kp Z                 &kp X             &kp C        &kp V        &kp B         &kp N         &kp M        &kp COMMA    &kp DOT      &kp FSLH     &lt 1 SQT
-&kp LCTRL            &kp LALT              &ht_sk LGUI LGUI  &none        &none        &none         &none         &none        &none        &kp RALT     &kp RCTRL    &td_bracket
+&kp LCTRL            &ht_sk LGUI LGUI      &kp LALT          &none        &none        &none         &none         &none        &none        &kp RALT     &kp RCTRL    &td_bracket
 &kp LANG1            &ht_sft LSHIFT SPACE  &lt 1 SPACE                                               &lt 2 ENTER   &kp DEL      &mo 2        &kp B
             >;
         };
