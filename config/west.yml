@@ -2,10 +2,30 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: eyelash
+      url-base: https://github.com/a741725193
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: badjeff
+      revision: main
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
+    - name: zmk-board-eyelash
+      remote: eyelash
+      revision: main
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: v0.3
   self:
     path: config

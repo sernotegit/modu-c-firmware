@@ -1,5 +1,9 @@
 include:
+  - board: eyelash_nano
+    shield: modu_dongle dongle_display
   - board: ms88sf3/nrf52840
-    shield: modu_left
+    shield: modu_peripheral_left
   - board: ms88sf3/nrf52840
     shield: modu_right
+  - board: ms88sf3/nrf52840
+    shield: modu_left

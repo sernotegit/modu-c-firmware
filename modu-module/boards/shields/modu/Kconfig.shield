@@ -7,3 +7,9 @@ config SHIELD_MODU_LEFT
 
 config SHIELD_MODU_RIGHT
     def_bool $(shields_list_contains,modu_right)
+
+config SHIELD_MODU_PERIPHERAL_LEFT
+    def_bool $(shields_list_contains,modu_peripheral_left)
+
+config SHIELD_MODU_DONGLE
+    def_bool $(shields_list_contains,modu_dongle)

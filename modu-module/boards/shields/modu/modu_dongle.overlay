@@ -1,0 +1,30 @@
+﻿/*
+ * Copyright (c) 2026 EKS Inc.
+ * Created by Ryu.
+ * SPDX-License-Identifier: LicenseRef-EKS-NonCommercial-1.0
+ */
+
+#include "modu.dtsi"
+#include <input/processors.dtsi>
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zmk,matrix-transform = &default_transform;
+    };
+
+    mock_kscan: kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
+
+&trackball_listener {
+    status = "disabled";
+};
+
+&peripheral_trackball_listener {
+    status = "okay";
+};
