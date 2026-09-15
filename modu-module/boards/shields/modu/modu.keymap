@@ -14,10 +14,9 @@
         ht_sft: hold_tap_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
     };
