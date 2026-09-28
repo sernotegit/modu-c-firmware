@@ -136,6 +136,20 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        combo_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <20 31>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <20 33>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
     keymap {
