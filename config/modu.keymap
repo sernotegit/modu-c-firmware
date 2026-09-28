@@ -132,7 +132,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <31 32>;
+            key-positions = <32 33>;
             timeout-ms = <50>;
             layers = <0>;
         };
