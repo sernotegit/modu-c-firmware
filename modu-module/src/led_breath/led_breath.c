@@ -25,6 +25,7 @@ LOG_MODULE_REGISTER(led_breath, CONFIG_LOG_DEFAULT_LEVEL);
 #define SLOW_BLINK_MS     1200u
 #define FAST_BLINK_MS     250u
 #define BOOT_RED_MS       1500u
+#define AUTO_OFF_MS       3000u
 
 __weak int zmk_ble_active_profile_index(void) { return 0; }
 __weak bool zmk_ble_active_profile_is_open(void) { return true; }
@@ -170,6 +171,12 @@ static void set_led_channel(int channel, uint32_t level)
 
 static void breath_work_handler(struct k_work *work)
 {
+    if (breath_tick * BREATH_STEP_MS >= AUTO_OFF_MS) {
+        for (int i = 0; i < NUM_LEDS; i++) {
+            set_led_channel(i, 0);
+        }
+        return;
+    }
 #if MODU_IS_RIGHT_SHIELD
     bool split_setup = split_setup_done();
     bool split_ready = split_transport_connected();
