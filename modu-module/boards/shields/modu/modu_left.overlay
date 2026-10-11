@@ -39,12 +39,12 @@
     alt-rotation-sin-milli = <707>;
 };
 
-/* Local (left-half) trackball -> host HID. */
+/* Local (left-half) trackball -> disabled */
 &trackball_listener {
-    status = "okay";
+    status = "disabled";
 };
 
-/* Peripheral (right-half) trackball proxied over BLE split -> host HID. */
+/* Peripheral (right-half) trackball proxied over BLE split -> disabled */
 &peripheral_trackball_listener {
-    status = "okay";
+    status = "disabled";
 };
