@@ -41,6 +41,7 @@
 };
 
 &uart0 {
+	status = "disabled";
 	compatible = "nordic,nrf-uarte";
 	current-speed = <115200>;
 	pinctrl-0 = <&uart0_default>;

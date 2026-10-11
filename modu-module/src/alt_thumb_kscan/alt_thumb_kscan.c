@@ -146,6 +146,9 @@ static int modu_alt_thumb_kscan_init(const struct device *dev)
             data->alt_enabled ? "grounded" : "open",
             data->alt_enabled ? "alt" : "non-alt");
 
+    /* Disconnect GPIO pin to eliminate static pull-up current leak to ground */
+    gpio_pin_configure(cfg->orientation_gpio.port, cfg->orientation_gpio.pin, GPIO_DISCONNECTED);
+
 #if IS_ENABLED(CONFIG_PM_DEVICE)
     pm_device_init_suspended(dev);
 #endif
