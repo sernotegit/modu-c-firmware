@@ -40,6 +40,22 @@
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
 
+        td_lbkt_lbrc: td_lbkt_lbrc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LBKT_LBRC";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
+        };
+
+        td_rbkt_rbrc: td_rbkt_rbrc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_RBKT_RBRC";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
+        };
+
         td_minus_equal: td_minus_equal {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MINUS_EQUAL";
@@ -217,7 +233,7 @@
 
         layer_2 {
             bindings = <
-&kp PRINTSCREEN  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans
+&kp PRINTSCREEN  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans       &td_lbkt_lbrc  &td_rbkt_rbrc  &trans
 &trans           &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans
 &trans           &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans
 &trans           &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans
