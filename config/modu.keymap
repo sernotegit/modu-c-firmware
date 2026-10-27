@@ -118,6 +118,13 @@
             layers = <0>;
         };
 
+        select_all {
+            bindings = <&kp LC(A)>;
+            key-positions = <25 26>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
         undo {
             bindings = <&kp LC(Z)>;
             key-positions = <25 37>;

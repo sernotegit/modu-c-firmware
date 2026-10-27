@@ -128,6 +128,11 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)  RC(4,6) RC(4,7) RC(4,8) RC(4,9)
     };
 };
 
+/* PWM0 - disabled to stop HFCLK clock leak */
+&pwm0 {
+    status = "disabled";
+};
+
 /* PMW3610 Trackball - disabled */
 &spi0 {
     status = "disabled";
