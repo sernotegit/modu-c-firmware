@@ -203,6 +203,76 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        combo_f1 {
+            bindings = <&kp F1>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f2 {
+            bindings = <&kp F2>;
+            key-positions = <1 2>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f3 {
+            bindings = <&kp F3>;
+            key-positions = <2 3>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f4 {
+            bindings = <&kp F4>;
+            key-positions = <3 4>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f5 {
+            bindings = <&kp F5>;
+            key-positions = <4 5>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f6 {
+            bindings = <&kp F6>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f7 {
+            bindings = <&kp F7>;
+            key-positions = <7 8>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f8 {
+            bindings = <&kp F8>;
+            key-positions = <8 9>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f9 {
+            bindings = <&kp F9>;
+            key-positions = <9 10>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_f10 {
+            bindings = <&kp F10>;
+            key-positions = <10 11>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
     keymap {
